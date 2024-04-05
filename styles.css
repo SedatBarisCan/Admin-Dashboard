@@ -1,0 +1,150 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1.2fr 5fr;
+    margin: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    padding: 5px;
+}
+
+.sidebar {
+    min-width: 220px;
+    grid-column: 1/2;
+    background-color: #fcf4da;
+    font-weight: bold;
+    color: #3c3c3f;
+    grid-row: 1 / -1;
+    display: grid;
+    grid-template-rows: 1fr 1.2fr;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+}
+
+.header {
+    grid-column: 2/3;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1.2fr;
+}
+
+.main {
+    grid-column: 2/3;
+    background-color: #e9edf3;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 30px;
+    padding: 30px;
+}
+
+.project {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/2;
+    grid-row: 1/ 6;
+}
+
+.announcement {
+    grid-column: 2/3;
+    border-radius: 6px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align:center;
+    justify-content: flex-start;
+    min-width: 110px;
+}
+
+.announcements {
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 20px;
+}
+
+.trending {
+    grid-column: 2/3;
+    border-radius: 6px;
+    background-color: white;
+    grid-row: 2/6
+}
+
+.projects {
+    border-radius: 6px;
+    background: linear-gradient(to right, orange 2%, white 0%);
+    padding: 25px;
+    min-width: 300px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.left-nav {
+    display: flex;
+    flex-grow: 5;
+    margin-left: 50px;
+}
+
+.right-nav {
+    flex-grow: 3;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.right-nav button {
+    border: none;
+    border-radius: 16px;
+    background-color: #3a6ea3;
+    flex-shrink: 0;
+    width: 80px;
+  height: 30px;
+}
+
+.logos-right {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+nav button {
+    background-color: #3a6ea3;
+    color: white;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar .input {
+    flex-grow: 6;
+    display: flex;
+    margin-left: 35px;
+}
+
+.search-bar input {
+    display: flex;
+    background-color: #cbd5e1;
+    border-radius: 14px;
+    border: none;
+    flex-grow: 1;
+    height: 25px;
+}
+
+.search-bars-right {
+    display: flex;
+    flex-grow: 3;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    padding-bottom: 30px;
+    font-size: larger;
+}
